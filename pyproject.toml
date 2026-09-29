@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ultimate2c-ring"
+version = "0.4.2"
+description = "Verified Home-ring firmware profiles for 8BitDo Ultimate 2C Wireless"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {file = "LICENSE"}
+dependencies = ["hidapi==0.15.0"]
+classifiers = ["Development Status :: 3 - Alpha", "Operating System :: Microsoft :: Windows"]
+
+[project.scripts]
+ultimate2c-ring = "ultimate2c_ring.__main__:main"
+
+[project.gui-scripts]
+ultimate2c-ring-gui = "ultimate2c_ring.gui:launch"
+
+[tool.setuptools.packages.find]
+include = ["ultimate2c_ring*"]
+
+[tool.setuptools.package-data]
+ultimate2c_ring = ["assets/*.ico", "assets/*.png", "assets/*.svg"]

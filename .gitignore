@@ -1,0 +1,15 @@
+.venv/
+.build-env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+backups/
+private/
+*.bin
+*.dat
+*.zip
+*.jsonl
+controller-identity.json
+ultimate2c-compatibility*.json
